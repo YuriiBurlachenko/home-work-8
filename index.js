@@ -1,4 +1,4 @@
-const DELETESECONFElement = 1;
+const DELETEFrom2To4Elements = 1;
 const threeElemetns = 3;
 const arrNum = prompt('введіть новий масив через пробіл');
 console.log(arrNum);
@@ -9,7 +9,7 @@ let arrSort = arr.sort(function (a, b) {
   return a - b;
 });
 console.log(arrSort);
-const removed = arrSort.splice(DELETESECONFElement, threeElemetns);
+const removed = arrSort.splice(DELETEFrom2To4Elements, threeElemetns);
 console.log('видалені елементи');
 console.log(removed);
 console.log('результат після видаленя');
