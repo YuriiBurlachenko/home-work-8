@@ -1,16 +1,16 @@
-const delete_from_2_to_4_elements = 1;
-const three_elemetns = 3;
-const arr_num = prompt('введіть новий масив через пробіл');
-console.log(arr_num);
-const arr = arr_num.split(' ');
+const DELETE_FROM_2_TO_4_ELEMENTS = 1;
+const THREE_ELEMENTS = 3;
+const arrNum = prompt('введіть новий масив через пробіл');
+console.log(arrNum);
+const arr = arrNum.split(' ');
 arr.length = prompt('введіть довжину масив');
 console.log(arr);
-let arr_sort = arr.sort(function (a, b) {
+let arrSort = arr.sort(function (a, b) {
   return a - b;
 });
-console.log(arr_sort);
-const removed = arr_sort.splice(delete_from_2_to_4_elements, three_elemetns);
+console.log(arrSort);
+const removed = arrSort.splice(DELETE_FROM_2_TO_4_ELEMENTS, THREE_ELEMENTS);
 console.log('видалені елементи');
 console.log(removed);
 console.log('результат після видаленя');
-console.log(arr_sort);
+console.log(arrSort);
