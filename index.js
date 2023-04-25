@@ -15,9 +15,10 @@ let arrSort = arr.sort(function (a, b) {
 });
 
 console.log(arrSort);
-const removed = arrSort.splice(DELETE_FROM_2_TO_4_ELEMENTS, THREE_ELEMENTS);
-
-console.log('видалені елементи');
-console.log(removed);
-console.log('результат після видаленя');
-console.log(arrSort);
+if (arr.length > 4) {
+  const removed = arrSort.splice(DELETE_FROM_2_TO_4_ELEMENTS, THREE_ELEMENTS);
+  console.log('видалені елементи');
+  console.log(removed);
+  console.log('результат після видаленя');
+  console.log(arrSort);
+}
